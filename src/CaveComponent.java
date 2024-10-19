@@ -15,7 +15,7 @@ public class CaveComponent extends JComponent
     private int xOffset, yOffset;  
 
     /**
-     * Make a new CaveComponent object and generates a grid.
+     * Makes a new CaveComponent and generates a grid.
      */
     public CaveComponent() 
     {

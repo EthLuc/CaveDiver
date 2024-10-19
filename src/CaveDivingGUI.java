@@ -1,14 +1,19 @@
 import javax.swing.*;
 import java.awt.*;
 
-
+/**
+ * Creates the main window for the cave escape game. 
+ * Let's the user enter a depth rating to find an escape route.
+ */
 public class CaveDivingGUI extends JFrame {
     private CaveComponent caveComponent;
     private JTextField depthField;
     private JButton escapeButton, newCaveButton;
     private JLabel statusLabel;
     
-
+/**
+ * Constructs the CaveDivingGUI.
+ */
     public CaveDivingGUI() {
         setTitle("Cave Diver - Find a Escape Route");
         setLayout(new BorderLayout());
@@ -41,7 +46,10 @@ public class CaveDivingGUI extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
     }
-
+/**
+ * Starts the escape and returns if the escape is successful or not based on the user's entered depth.
+ * Also handles errors if the user enters an invalid depth.
+ */
     private void startEscape() {
         try {
             int depthRating = Integer.parseInt(depthField.getText());

@@ -1,5 +1,9 @@
 import java.awt.*;
 
+/**
+ * Represents a single cell in the grid and stores it location by row/column, depth,
+ * and if it is a part of the escape route or not.
+ */
 public class CaveCell 
 {
     private int row, col, depth;
